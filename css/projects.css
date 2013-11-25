@@ -1,0 +1,15 @@
+h4 {
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.projects {
+  width: 512px;
+}
+
+.img {
+  border-radius: 2px;
+  display: block;
+  margin: auto;
+  width: 100%;
+}
