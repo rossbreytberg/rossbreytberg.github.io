@@ -18,7 +18,7 @@ var loadPage = function(/*string*/ url) {
   request.send();
 };
 
-var loadPageFromCurrentHash = function() {
+var loadPageAndUpdateNavFromCurrentHash = function() {
   var hash = window.location.hash.replace('#', '') || DEFAULT_PAGE;
 
   var links = {
