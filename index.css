@@ -1,0 +1,47 @@
+body {
+  background: #6592e0;
+  font-family: HelveticaNeue, Helvetica, Verdana;
+  margin: 0;
+}
+
+a {
+  color: #888;
+  text-decoration: none;
+}
+
+a:hover, a.selected {
+  color: #777;
+}
+
+a.selected {
+  font-weight: bold;
+}
+
+.centered-container {
+  text-align: center;
+}
+
+.centered-content {
+  display: inline-block;
+}
+
+#header-container {
+  background: #fff;
+}
+
+#header-content {
+  color: #6592e0;
+  padding: 12px;
+}
+
+#nav {
+  color: #888;
+  line-height: 20px;
+}
+
+#title {
+  display: inline-block;
+  font-family: HelveticaNeue-Light;
+  font-size: 48px;
+  font-weight: lighter;
+}
