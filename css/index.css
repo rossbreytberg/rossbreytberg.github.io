@@ -1,5 +1,5 @@
 body {
-  background: #6592e0;
+  background: #eee;
   font-family: HelveticaNeue, Helvetica, Verdana;
   margin: 0;
 }
@@ -9,11 +9,15 @@ a {
   text-decoration: none;
 }
 
-a:hover, a.selected {
-  color: #777;
+a:hover {
+  color: #6592e0;
 }
 
-a.selected {
+p {
+  text-align: left;
+}
+
+.selected {
   font-weight: bold;
 }
 
@@ -30,8 +34,11 @@ a.selected {
 }
 
 #header-content {
-  color: #6592e0;
   padding: 12px;
+}
+
+#header-content a:hover {
+  color: #777;
 }
 
 #nav {
@@ -40,6 +47,7 @@ a.selected {
 }
 
 #title {
+  color: #6592e0;
   display: inline-block;
   font-family: HelveticaNeue-Light;
   font-size: 48px;

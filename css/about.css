@@ -1,0 +1,15 @@
+.about {
+  width: 512px;
+}
+
+.img {
+  border-radius: 999px;
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+.contact-icon {
+  border-radius: 16px;
+  height: 64px;
+}

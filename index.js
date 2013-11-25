@@ -39,5 +39,5 @@ var loadPageAndUpdateNavFromCurrentHash = function() {
   loadPage(hash + '.html');
 }
 
-window.onhashchange = loadPageFromCurrentHash;
-window.onload = loadPageFromCurrentHash;
+window.onhashchange = loadPageAndUpdateNavFromCurrentHash;
+window.onload = loadPageAndUpdateNavFromCurrentHash;
