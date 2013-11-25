@@ -1,11 +1,16 @@
 var onChangePage = function(response) {
-  console.log(response);
+  var body = document.getElementById('body');
+  body.innerHTML = response;
 }
 
 window.onhashchange = function(event) {
   var hash = window.location.hash.replace('#', '');
   var request = new XMLHttpRequest();
-  request.onload = onChangePage;
+  request.onreadystatechange = function() {
+    if (request.readyState === 4) {
+      onChangePage(request.responseText);
+    }
+  };
   request.open('GET', hash + '.html', true);
   request.send();
 };
