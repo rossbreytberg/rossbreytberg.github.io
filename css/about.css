@@ -13,3 +13,8 @@
   border-radius: 16px;
   height: 64px;
 }
+
+.contact-icon:hover {
+  -webkit-filter: brightness(110%);
+  -webkit-transform: translateZ(0);
+}
