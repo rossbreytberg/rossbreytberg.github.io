@@ -19,12 +19,15 @@ var loadPage = function(/*string*/ url) {
 };
 
 var loadPageAndUpdateNavFromCurrentHash = function() {
-  var hash = window.location.hash.replace('#', '') || DEFAULT_PAGE;
 
   var links = {
     about: document.getElementById('nav-about'),
     projects: document.getElementById('nav-projects')
   };
+
+  var hash = window.location.hash.replace('#', '');
+  hash = hash in links ? hash : DEFAULT_PAGE;
+
 
   for (var link_name in links) {
     if (links.hasOwnProperty(link_name)) {
